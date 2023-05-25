@@ -1,38 +1,227 @@
-.App {
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+.h-big {
+  font-size: 4em;
+  font-weight: bolder;
+}
+.h-mid {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+div.activity-indicator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height:  100vh;
+  background: transparent;
+  overflow: hidden;
+}
+
+.app-btn-default {
+  padding: 10px 50px;
+  border: 1px solid transparent;
+  border-radius: 25px !important;
+  color: white;
+  background:  #1c2833;
+}
+
+.app-btn-bar {
+  padding: 5px 10px;
+  border: 1px solid transparent;
+  border-radius: 5px !important;
+  color: white;
+  border: 1px solid  transparent;
+  background: #02cdff;
+}
+
+.app-btn {
+  padding: 10px 50px;
+  border: 1px solid transparent;
+  border-radius: 25px !important;
+  color: black;
+  background:  #26c6da  ;
+}
+
+
+/*nav bar*/
+div.nav-bar-parent {
+  background: transparent;
+  height: auto;
+  padding: 0px !important;
+}
+
+div.app-logo {
+  /* background: red; */
+  padding: 20px;
+
+
+}
+
+div.nav-bar {
+  /* background: green; */
+  padding: 10px;
+
+}
+
+div.nav-bar-btn {
+  background: transparent;
+  padding: 10px;
+}
+
+.nav-btn {
+  padding: 4px 20px;
+  border: 1px solid transparent;
+  border-radius: 18px;
+  background: #02cdff;
+  color: white;
+}
+div.nav-bar ul {
+  padding: 0;
+  margin: 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+div.nav-bar ul li {
+  display: inline-block;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+div.nav-bar ul li a{
+  display: block;
+  text-decoration: none;
+  padding: 8px 20px;
+  color: black;
+  border-bottom: 5px solid transparent;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+div.nav-bar ul li a:hover{
+  /* border-bottom: 0px solid transparent; */
+  /* animation-name: anchor;
+  animation-delay: 0.2s;
+  animation-duration: 0.5s;
+  animation-play-state: end;
+  animation-play-state: ease-in; */
+  border-bottom: 5px solid #02ccff;
+
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+@keyframes anchor {
   from {
-    transform: rotate(0deg);
+      border-bottom: 0px solid #02ccff;
   }
   to {
-    transform: rotate(360deg);
+    border-bottom: 5px solid #02ccff;
   }
+}
+
+/*banner*/
+div.banner-parent {
+  overflow: hidden;
+  background:transparent;
+
+}
+
+div.app-banner {
+  /* background: linear-gradient(10deg , #02ccff , white); */
+  background: #02ccff;
+  height: auto;
+  padding: 20px;
+
+}
+
+div.banner-text {
+  /* background: red; */
+  padding: 20px;
+}
+div.banner-img {
+  /* background: yellow; */
+}
+
+
+/*Specialities*/
+div.special-wrapper {
+  height: auto;
+  /* background: linear-gradient(50deg , white , #02ccff); */
+  margin: 0;
+  padding: 20px;
+  margin: auto;
+  border-radius: 20px;
+
+}
+
+div.special-card {
+    height: auto;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background:  transparent;
+    padding: 20px;
+    padding-top: 30px;
+}
+
+div.special-img {
+  text-align: center;
+}
+div.special-text {
+  text-align: justify;
+  padding: 20px;
+}
+
+
+
+/*about*/
+
+div.about-wrapper {
+  padding: 20px;
+  background:  #f0f3f4;
+}
+div.about-img {
+  padding: 20px;
+  /* background: red; */
+  text-align: center;
+}
+div.about-text {
+  /* background: yellow; */
+  padding: 20px;
+}
+
+
+/*servces*/
+div.services-wrapper {
+  height: 500px;
+  background: red;
+  padding: 20px;
+  margin: 0;
+}
+
+div.service-card-head {
+    height: auto;
+    background: #02ccff;
+    border-radius: 14px;
+    text-align: center;
+    padding: 20px;
+
+
+}
+
+div.service-card-head i {
+    font-size: 1.3em;
+    color: white;
+
+}
+div.service-card {
+  height: 400px;
+  border: 1px solid transparent;
+  border-radius:15px;
+  background:  #f0f3f4;
+  padding: 20px;
+  padding-top: 30px;
 }
