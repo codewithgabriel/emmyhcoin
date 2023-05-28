@@ -14,7 +14,6 @@ const SignInFormStep = () => {
                         <div className="col-lg-3 col-md-3 col-sm-3 col-xm-12"  style={{margin: 'auto'}}>
                             <img src={signin} alt="sing" />
                         </div>
-                        <Link to="/login" className="signup-image-link">I am already a member</Link>
                     </div>
                     
                     <div style={{ margin: 0}} className="col-lg-6 col-md-6 col-sm-12 col-xm-12">
@@ -38,6 +37,12 @@ const SignInFormStep = () => {
                             <div className="form-group">
                                 <input type="checkbox" name="agree-term" id="agree-term" className="agree-term" />
                                 <label htmlFor="agree-term" className="label-agree-term"><span><span></span></span>I agree all statements in  <Link to="#" className="term-service">Terms of service</Link></label>
+
+                            </div>
+
+                            <div className="form-group">
+                                <Link to="/login" className="signup-image-link">I am already a member</Link>
+
                             </div>
                             <div className="form-group form-button">
                                 <input type="submit" name="signup" id="signup" className="form-submit" value="Register"/>
