@@ -44,8 +44,8 @@ const SignInFormStep = () => {
                                 <Link to="/login" className="signup-image-link">I am already a member</Link>
 
                             </div>
-                            <div className="form-group form-button">
-                                <input type="submit" name="signup" id="signup" className="form-submit" value="Register"/>
+                            <div className="form-group form-button col-lg-6 col-md-6 col-sm-12 col-xm-12" style={{margin: 'auto'}}>
+                                <input type="submit" name="signup" id="signup" className="app-btn-default" value="Register"/>
                             </div>
                         </form>
                     </div>
