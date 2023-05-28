@@ -46,15 +46,14 @@ function App() {
   }
 );
 
-  useEffect(function() {
-    document.onreadystatechange = ()=>{
-      if (document.readyState !== "complete") {
-        setComponent(<ActivityIndicator/>);
-      }else {
-        setComponent(<LandingPage />);
-      }
-    }
-  } , [])
+document.addEventListener('readystatechange', ()=>{
+  if (document.readyState !== "complete") {
+    setComponent(<ActivityIndicator/>);
+  }else {
+    setComponent(<LandingPage />);
+  }
+})
+
 
   return (
     <BrowserRouter>
