@@ -1,5 +1,4 @@
 import * as React from "react";
-import signin from '../imgs/unlock.svg';
 import { Link } from 'react-router-dom';
 
 const Login = () => {

@@ -6,6 +6,7 @@ function AboutUsMore(){
     return(
         <div className='container-fluid'>
             <Navbar />
+            
             <Footer />
 
         </div>

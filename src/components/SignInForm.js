@@ -38,7 +38,7 @@ const SignInForm = () => {
                              <h2 style={{padding: 0, textAlign: 'center' }} className="form-title">Create Account</h2>
                          </div>
                         <div className="col-lg-3 col-md-3 col-sm-3 col-xm-12"  style={{margin: 'auto'}}>
-                            <img src={signin} alt="sing up image" />
+                            <img src={signin} alt="sing" />
                         </div>
                         <Link to="/login" className="signup-image-link">I am already a member</Link>
                     </div>
