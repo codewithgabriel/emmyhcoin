@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
 
-function NavbarSmall({toAbout , toServices}) {
+function NavbarSmall({toServices  ,  toAbout}) {
     return (
         <div style={{ margin: 0, padding: 0, height: 'auto' }} className='nav-bar-sm-wrapper container-fluid nav-bar-sm'>
            <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -19,7 +19,7 @@ function NavbarSmall({toAbout , toServices}) {
         </li>
         
         <li className="nav-item">
-          <Link className="nav-link" to="#" onClick={{toServices}}>Our Service</Link>
+          <Link className="nav-link" to="" onClick={toServices}>Our Service</Link>
         </li>
 
         <li className="nav-item">
@@ -27,7 +27,7 @@ function NavbarSmall({toAbout , toServices}) {
         </li>
 
         <li className="nav-item">
-          <Link className="nav-link" href="#" onClick={{toAbout}}>About</Link>
+          <Link className="nav-link" to="" onClick={toAbout}>About</Link>
         </li>
 
 

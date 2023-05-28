@@ -13,7 +13,7 @@ import LandingPage from './components/LandingPage';
 import Login from './components/Login';
 import Signup from './components/Signup';
 import AboutUsMore  from './components/AboutUsMore';
-
+import NotFound from './components/NotFound';
 
 
 
@@ -66,6 +66,8 @@ function App() {
           <Route path="/login" element= {<Login />} />
           <Route path="/signup" element= {<Signup />} />
           <Route path="/about-us" element= {<AboutUsMore />} />
+          <Route path="*" element= {<NotFound />} />
+
 
       </Routes>
     </BrowserRouter>

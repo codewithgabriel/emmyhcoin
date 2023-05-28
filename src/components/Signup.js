@@ -1,5 +1,4 @@
 import * as React from "react";
-import signin from '../imgs/unlock.svg';
 import { Link } from 'react-router-dom';
 
 const Signup = () => {
@@ -10,9 +9,11 @@ const Signup = () => {
 
 
                 <div className="col-12" style={{ height: 'auto' }}>
+                <Link to="/">
                     <div className="col-5" style={{ margin: 'auto' }}>
                         <img src="https://www.emmyhcoin.com/static/image/Emmyh Crypto blue logo_mod.png" alt="logo" />
                     </div>
+                    </Link>
 
                 </div>
 

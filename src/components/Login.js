@@ -10,9 +10,11 @@ const Login = () => {
 
 
                 <div className="col-12" style={{ height: 'auto' }}>
+                    <Link to="/">
                     <div className="col-5" style={{ margin: 'auto' }}>
                         <img src="https://www.emmyhcoin.com/static/image/Emmyh Crypto blue logo_mod.png" alt="logo" />
                     </div>
+                    </Link>
 
                 </div>
 
@@ -29,7 +31,7 @@ const Login = () => {
                     <i className="fas fa-lock" style={{marginRight: 5}}></i>
                     <span>Please ensure you're on https://www.emmycoin.com</span>
                 </div>
-                    <form style={{ padding: 0, margin: 0 }} className="col-12">
+                    <form style={{ padding: 0, margin: 0 }} className="col-12" method="post" action="#">
                         <div className="form-group-cm col-12">
                             <i className="fas fa-user"></i>
                             <input className="form-input  col-12" type="text" name="username" placeholder="e.g you@mail.com" />
