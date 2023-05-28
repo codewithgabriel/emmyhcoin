@@ -16,10 +16,14 @@ import AboutUsMore  from './components/AboutUsMore';
 import NotFound from './components/NotFound';
 
 
-
+function Empty(){
+  return(
+    <></>
+  )
+}
 
 function App() {
-  const [component ,  setComponent ] = useState(<ActivityIndicator />);
+  const [component ,  setComponent ] = useState(<Empty/>);
   const [loading , setLoading] = useState(true);
 
   AOS.init(
