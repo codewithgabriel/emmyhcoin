@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
 
-function NavbarSmall() {
+function NavbarSmall({toAbout , toServices}) {
     return (
         <div style={{ margin: 0, padding: 0, height: 'auto' }} className='nav-bar-sm-wrapper container-fluid nav-bar-sm'>
            <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -18,11 +18,11 @@ function NavbarSmall() {
           <Link className="nav-link active" aria-current="page" href="#">Home</Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" href="#">Why EmmyHCoin?</Link>
+          <Link className="nav-link" to="t/">Home</Link>
         </li>
 
         <li className="nav-item">
-          <Link className="nav-link" href="#">Our Service</Link>
+          <Link className="nav-link" to="" onClick={{toServices}}>Our Service</Link>
         </li>
 
         <li className="nav-item">
@@ -34,9 +34,7 @@ function NavbarSmall() {
         </li>
 
 
-        <li className="nav-item">
-          <Link className="nav-link disabled" href="#" tabIndex="-1" aria-disabled="true">Disabled</Link>
-        </li>
+        
       </ul>
      
     </div>

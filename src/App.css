@@ -124,9 +124,7 @@
 a { 
   text-decoration: none !important;
 }
-a:hover {
-  color: #227fd6 !important;
-}
+
 
 img {
   height: auto;
@@ -164,6 +162,14 @@ div.activity-indicator {
   /* border-radius: 25px !important; */
   color: #1c2833;
   /* background:  #1c2833; */
+}
+
+a.app-btn-default {
+  padding: 10px 50px;
+  border: 1px solid transparent;
+  border-radius: 25px !important;
+  color: white;
+  background:  #1c2833;
 }
 .app-btn-default {
   padding: 10px 50px;

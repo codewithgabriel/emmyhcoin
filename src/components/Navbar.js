@@ -2,28 +2,9 @@ import * as React from 'react';
 import  {Link} from 'react-router-dom';
 
 
-function Navbar(){
+function Navbar({toServices  ,  toAbout}){
 
-  function toServices(event){
-    event.preventDefault();
-    let elem = document.querySelector(".special-wrapper")
-    elem.scrollIntoView();
-  }
-
-  function toAbout(event){
-    event.preventDefault();
-    try {
-      let elem = document.querySelector(".about-wrapper")
-      if (elem == null){
-        throw Error;
-      }
-      elem.scrollIntoView();
-
-    }catch(e){
-      console.log(e.message);
-    }
-    
-  }
+  
   return(
     <div  style={{margin: 0 , padding: 0}} className="container-fluid nav-bar-parent row col-12 ">
       <div className="app-logo  row col-lg-3 col-md-3 col-sm-3 col-xm-3">
