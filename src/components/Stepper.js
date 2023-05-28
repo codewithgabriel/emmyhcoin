@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import styled from '@emotion/styled'
-import { CDBStepper, CDBStep, CDBInput, CDBBtn, CDBContainer } from "cdbreact";
+import { CDBStepper, CDBStep } from "cdbreact";
 import StepperHeader from './StepperHeader';
-import SignInForm from "./SignInForm";
+import SignInFormStep from "./SignInFormStep";
 // import createaccount from '../imgs/img4.png';
 import SelectExchange from "./SelectExchange";
 import Transfer from "./Transfer";
@@ -146,7 +146,7 @@ const Step1 = ({ handleNextPrevClick }) => {
                 <div style={{ background: 'transparent' , padding: 0 , margin: 0}} className="col-12">
 
                   <div className="col-12"> 
-                      <SignInForm/>
+                      <SignInFormStep/>
                   </div>
                 </div>
 

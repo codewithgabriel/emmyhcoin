@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 
 function Footer () {
     return(
-    <footer class="text-muted py-5">
+    <footer class="text-dark py-5">
     
-    <div className='container-fluid row col-12 text-dark' style={{padding: 50, color: '#02ccff'}}>
+    <div className='container-fluid row col-12' style={{padding: 50}}>
 
             <div className='col-lg-4 col-md-4 col-xm-12 col-sm-12'>
                 <h3 style={{textAlign:'center'}}>Quick Links</h3>
