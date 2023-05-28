@@ -2,6 +2,8 @@ import * as React from 'react';
 import buy from '../imgs/buy.svg';
 import sell from '../imgs/sell.svg';
 import invest from '../imgs/invest.svg';
+
+
 function Specialities(){
   return(
     <div style={{padding: 0 ,  margin: 0, marginTop: 100}} className="container-fluid col col-12 " data-aos="fade-down">
@@ -10,7 +12,7 @@ function Specialities(){
 
           <div className="special-card col-lg-4" data-aos="fade-down">
             <div className="special-img col-12">
-                <img src={buy} />
+                <img src={buy} alt="Sell your crypto" />
             </div>
 
             <div className="special-text">
@@ -25,11 +27,11 @@ function Specialities(){
 
           <div className="special-card col-lg-4" data-aos="fade-down">
             <div className="special-img col-12">
-                <img src={invest} />
+                <img src={invest} alt="Sell Your Crypto"/>
             </div>
 
             <div className="special-text">
-            <h3> Sell Your Gift Card</h3>
+            <h3> Sell Your Gift Cards</h3>
             <p>
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed dianonumy eirmod tempor invidunt ut labore .
 
@@ -40,7 +42,7 @@ function Specialities(){
 
           <div className="special-card col-lg-4" data-aos="fade-down">
             <div className="special-img col-12">
-                <img src={sell} />
+                <img src={sell}  alt="Sell Your Gift Cards"/>
             </div>
 
             <div className="special-text">

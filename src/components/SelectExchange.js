@@ -13,7 +13,7 @@ const SelectExchange = ({ handleNextPrevClick }) => {
             <div className="col-lg-6 col col-md-6 col-sm-12 col-xm-12" style={{ padding: 0, textAlign: 'center' }}>
                 <div>
                     <h2 className="form-title">Select Your Crypto For Exchange</h2>
-                    <p>Easily convert your crypto currency to NGN in one click</p>
+                    <p>Easily convert your crypto currency and gift cards to NGN in one click</p>
 
                     <div>
                         <button onClick={() => handleNextPrevClick(3)} className="app-btn-default"> Next <i class="fa-solid fa-caret-right"></i></button>

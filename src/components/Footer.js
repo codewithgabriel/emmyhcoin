@@ -33,8 +33,8 @@ function Footer () {
             <div class="container">
         <p class="float-end mb-1">
         <a href="#">
-            <div style={{height: '70px' , width: '70px' , padding: 20}}>
-             <i class="fa-solid fa-caret-up"></i>
+            <div style={{height: '50px' , width: '50px' , textAlign:'center', borderRadius: 7, padding: 15, background: '#02ccff' , color: 'white'}}>
+                 <i  style={{fontSize: '1.5em'}} class="fa-solid fa-caret-up"></i>
             </div>
         </a>
         </p>

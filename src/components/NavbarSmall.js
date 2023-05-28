@@ -15,18 +15,15 @@ function NavbarSmall({toAbout , toServices}) {
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         <li className="nav-item">
-          <Link className="nav-link active" aria-current="page" href="#">Home</Link>
+          <Link className="nav-link active" aria-current="page" href="/">Home</Link>
         </li>
-        <li className="nav-item">
-          <Link className="nav-link" to="/">Home</Link>
-        </li>
-
+        
         <li className="nav-item">
           <Link className="nav-link" to="#" onClick={{toServices}}>Our Service</Link>
         </li>
 
         <li className="nav-item">
-          <Link className="nav-link" href="#">Support</Link>
+          <Link className="nav-link" to="/login">Wallet</Link>
         </li>
 
         <li className="nav-item">
