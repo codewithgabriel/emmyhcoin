@@ -1,12 +1,18 @@
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import './form.css';
+import './form.css.map';
+
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/js/bootstrap..js';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import  {BrowserRouter , Route , Routes } from 'react-router-dom';
-import  {useState  , useEffect } from 'react';
+import  React, {useState  , useEffect } from 'react';
 import ActivityIndicator from './components/ActivityIndicator';
 import LandingPage from './components/LandingPage';
-
+import Login from './components/Login';
+import Signup from './components/Signup';
+import AboutUsMore  from './components/AboutUsMore';
 
 
 
@@ -16,7 +22,6 @@ function App() {
   const [component ,  setComponent ] = useState(<ActivityIndicator />);
 
   useEffect(function() {
-
     AOS.init(
         {
       // Global settings:
@@ -33,27 +38,40 @@ function App() {
       // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
       offset: 120, // offset (in px) from the original trigger point
       delay: 0, // values from 0 to 3000, with step 50ms
-      duration: 400, // values from 0 to 3000, with step 50ms
+      duration: 1000, // values from 0 to 3000, with step 50ms
       easing: 'ease', // default easing for AOS animations
       once: false, // whether animation should happen only once - while scrolling down
       mirror: false, // whether elements should animate out while scrolling past them
       anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
-
       }
     );
 
+    // document.onreadystatechange = ()=>{
+    //   if (document.readyState !== "complete") {
+    //     setComponent(<ActivityIndicator/>);
+    //   }else {
+    //     setComponent(<LandingPage />);
+    //   }
+    // }
 
-    setComponent(<LandingPage/>);
+    setComponent(<LandingPage />);
+
+
   } , [])
 
   return (
     <BrowserRouter>
       <Routes>
-          <Route path="/" element= {component} />
+          <Route index path="/" element= {component} />
+          <Route path="/login" element= {<Login />} />
+          <Route path="/signup" element= {<Signup />} />
+          <Route path="/about-us" element= {<AboutUsMore />} />
+
       </Routes>
     </BrowserRouter>
 
   );
 }
+
 
 export default App;
