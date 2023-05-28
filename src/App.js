@@ -8,7 +8,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import  {BrowserRouter , Route , Routes } from 'react-router-dom';
 import  React, {useState  , useEffect } from 'react';
-import ActivityIndicator from './components/ActivityIndicator';
+// import ActivityIndicator from './components/ActivityIndicator';
 import LandingPage from './components/LandingPage';
 import Login from './components/Login';
 import Signup from './components/Signup';
@@ -23,7 +23,7 @@ function Empty(){
 }
 
 function App() {
-  const [component ,  setComponent ] = useState(<Empty/>);
+  const [component ,  setComponent ] = useState(<LandingPage />);
   const [loading , setLoading] = useState(true);
 
   AOS.init(
@@ -50,13 +50,13 @@ function App() {
   }
 );
 
-document.addEventListener('readystatechange', ()=>{
-  if (document.readyState !== "complete") {
-    setComponent(<ActivityIndicator/>);
-  }else {
-    setComponent(<LandingPage />);
-  }
-})
+// document.addEventListener('readystatechange', ()=>{
+//   if (document.readyState !== "complete") {
+//     setComponent(<ActivityIndicator/>);
+//   }else {
+//     setComponent(<LandingPage />);
+//   }
+// })
 
 
   return (
