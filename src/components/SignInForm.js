@@ -25,7 +25,7 @@ const SignInForm = () => {
                             </div>
                             <div className="form-group">
                                 <input type="checkbox" name="agree-term" id="agree-term" className="agree-term" />
-                                <label htmlFor="agree-term" className="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" className="term-service">Terms of service</a></label>
+                                <label htmlFor="agree-term" className="label-agree-term"><span><span></span></span>I agree all statements in  <Link to="#" className="term-service">Terms of service</Link></label>
                             </div>
                             <div className="form-group form-button">
                                 <input type="submit" name="signup" id="signup" className="form-submit" value="Register"/>

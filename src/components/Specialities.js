@@ -18,7 +18,7 @@ function Specialities(){
             <div className="special-text">
             <h3> Sell Your Crypto</h3>
             <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed dianonumy eirmod tempor invidunt ut labore .
+                Convert and cash out your cryptocurrencies hassle-free with our secure program
 
              </p>
             </div>
@@ -33,8 +33,7 @@ function Specialities(){
             <div className="special-text">
             <h3> Sell Your Gift Cards</h3>
             <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed dianonumy eirmod tempor invidunt ut labore .
-
+                Turn your unused gift cards into cash easily with our user-friendly platform
              </p>
             </div>
           </div>
@@ -48,8 +47,7 @@ function Specialities(){
             <div className="special-text">
             <h3> Pay Your Bills</h3>
             <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed dianonumy eirmod tempor invidunt ut labore .
-
+                Simplify your life by paying your utilities with ease through our reliable platform
              </p>
             </div>
           </div>
