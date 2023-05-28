@@ -14,7 +14,7 @@ function Specialities(){
             </div>
 
             <div className="special-text">
-            <h3> Buy Your Crypto</h3>
+            <h3> Sell Your Crypto</h3>
             <p>
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed dianonumy eirmod tempor invidunt ut labore .
 
@@ -29,7 +29,7 @@ function Specialities(){
             </div>
 
             <div className="special-text">
-            <h3> Sell Your Crypto</h3>
+            <h3> Sell Your Gift Card</h3>
             <p>
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed dianonumy eirmod tempor invidunt ut labore .
 
@@ -44,7 +44,7 @@ function Specialities(){
             </div>
 
             <div className="special-text">
-            <h3> Swap Your Crypto</h3>
+            <h3> Pay Your Bills</h3>
             <p>
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed dianonumy eirmod tempor invidunt ut labore .
 

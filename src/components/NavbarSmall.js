@@ -30,7 +30,7 @@ function NavbarSmall({toAbout , toServices}) {
         </li>
 
         <li className="nav-item">
-          <Link className="nav-link" href="#">About</Link>
+          <Link className="nav-link" href="#" onClick={{toAbout}}>About</Link>
         </li>
 
 
