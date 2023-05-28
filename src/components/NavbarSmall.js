@@ -18,11 +18,11 @@ function NavbarSmall({toAbout , toServices}) {
           <Link className="nav-link active" aria-current="page" href="#">Home</Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to="t/">Home</Link>
+          <Link className="nav-link" to="/">Home</Link>
         </li>
 
         <li className="nav-item">
-          <Link className="nav-link" to="" onClick={{toServices}}>Our Service</Link>
+          <Link className="nav-link" to="#" onClick={{toServices}}>Our Service</Link>
         </li>
 
         <li className="nav-item">
