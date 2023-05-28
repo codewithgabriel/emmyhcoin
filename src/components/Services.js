@@ -58,7 +58,7 @@ function Services() {
           <div className="service-card-text">
             <h3> Referral Program</h3>
             <p>
-            We are now confident that our customers would whole-heartedly recommend us, we still want to express out gratitude by rewarding you for doing so! By sharing your referral links, you'll receive a lifetime commission every time anyone you refer completes an order with us. 
+            We are confident that our customers would whole-heartedly recommend us, we still want to express out gratitude by rewarding you for doing so! By sharing your referral links, you'll receive a lifetime commission every time anyone you refer completes an order with us. 
             </p>
           </div>
         </div>
