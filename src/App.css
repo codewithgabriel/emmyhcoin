@@ -120,7 +120,7 @@
 
 
 /*global class and element*/
-a { 
+a {
   text-decoration: none !important;
 }
 
@@ -411,7 +411,7 @@ div.form-wrapper {
   margin: auto;
   padding: 10px 20px;
   background-color: transparent;
-  padding-top: 100px; 
+  padding-top: 100px;
 }
 
 
@@ -437,7 +437,7 @@ div.form-parent {
   padding: 15px 30px;
   background: #1c2833;
   color:#02ccff;
-  
+
 }
 
 
@@ -473,7 +473,7 @@ div.form-parent {
 
 /*footer*/
 div.footer-quick-links ul li a , div.footer-follow-us ul li a {
-  color: #1c2833 !important;
+  color: white !important;
 }
 @media only screen and (max-width: 800px) {
   .h-big {

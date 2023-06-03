@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 function Footer () {
     return(
-    <footer class="text-dark py-5">
-    
+    <footer class="text-light py-5 bg-dark">
+
     <div className='container-fluid row col-12' style={{padding: 50}}>
 
             <div className='footer-quick-links col-lg-4 col-md-4 col-xm-12 col-sm-12'>
@@ -18,7 +18,7 @@ function Footer () {
                 </ul>
             </div>
 
-            
+
             <div className='footer-follow-us col-lg-4 col-md-4 col-xm-12 col-sm-12'>
                 <h3 style={{textAlign:'left'}}>Follow Us</h3>
                 <ul>
