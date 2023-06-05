@@ -124,6 +124,9 @@ a {
   text-decoration: none !important;
 }
 
+a:hover {
+  color: #0cc0f1;
+}
 
 img {
   height: auto;
@@ -180,7 +183,6 @@ a.app-btn-default {
   color: white;
   background:  #1c2833;
 }
-
 .app-btn-default:hover {
   padding: 10px 50px;
   border: 1px solid transparent;
@@ -188,6 +190,7 @@ a.app-btn-default {
   color:#1c2833;
   background:  #0cc0f1 ;
 }
+
 
 
 .app-btn-bar, .app-link-bar  {
@@ -199,7 +202,10 @@ a.app-btn-default {
   background: #02cdff;
   text-decoration: none;
 }
-
+.app-btn-bar:hover, .app-link-bar:hover {
+  background: #1c2833;
+  color: white;
+}
 .app-btn {
   padding: 10px 50px;
   border: 1px solid transparent;
