@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled from '@emotion/styled'
 import { CDBStepper, CDBStep } from "cdbreact";
 import StepperHeader from './StepperHeader';
-import SignInFormStep from "./SignInFormStep";
+import SignUpFormStep from "./SignUpFormStep";
 // import createaccount from '../imgs/img4.png';
 import SelectExchange from "./SelectExchange";
 import Transfer from "./Transfer";
@@ -33,7 +33,7 @@ const Stepper = () => {
           active={active}
           component={<Step2 handleNextPrevClick={handleNextPrevClick} />}
         />
-        
+
         <CDBStep
           id={3}
           icon="check"
@@ -107,9 +107,9 @@ const Step2 = ({ handleNextPrevClick }) => {
             >
               Step Two
             </div>
-            <FlexColumnContainer style={{height: 'auto' , widht: '100%'}}>  
+            <FlexColumnContainer style={{height: 'auto' , widht: '100%'}}>
               <SelectExchange  handleNextPrevClick={handleNextPrevClick} />
-              
+
             </FlexColumnContainer>
           </FlexColumnContainer>
         </div>
@@ -142,11 +142,11 @@ const Step1 = ({ handleNextPrevClick }) => {
             </div>
             <FlexColumnContainer width="100%">
               <div className="col-12">
-          
+
                 <div style={{ background: 'transparent' , padding: 0 , margin: 0}} className="col-12">
 
-                  <div className="col-12"> 
-                      <SignInFormStep/>
+                  <div className="col-12">
+                      <SignUpFormStep handleNextPrevClick={handleNextPrevClick}/>
                   </div>
                 </div>
 
@@ -173,4 +173,3 @@ const StepContainer = styled('div')`
   width: 100%;
   height: 100%;
 `;
-

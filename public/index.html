@@ -23,7 +23,7 @@
      <!-- Font Icon -->
      <link rel="stylesheet" href="%PUBLIC_URL%/fonts/material-icon/css/material-design-iconic-font.min.css">
 
-     
+
     <!-------google font-------->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Questrial ">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sigmar">
@@ -42,7 +42,15 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>EmmyHCoin </title>
+    <script src="https://emmyhcoin.com/user/js/session.js"></script>
+    <!-- <script src="https://emmyhcoin.com/static/js/layout.js"></script> -->
+
+
+    <title>EmmyHCoin  | Gift Cards and Crypto Exchange Made Simple </title>
+      <script>
+        session = new Session();
+        session.logoutRequired();
+      </script>
 
 
     <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -66,7 +74,55 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <!-- Button trigger modal -->
+<button type="button" id="alr-btn" style="display: none;" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Message</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+      </div>
+      <div class="modal-footer">
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <!-- Halfmoon JS -->
+    <script src="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/js/halfmoon.min.js"></script>
+    <!-- <script src="https://emmyhcoin.com/static/libraries/halfmoon/js/halfmoon.min.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    
+      <script src="https://emmyhcoin.com/static/js/include.js"></script>
+
+
+    <!---google login--->
+    <script>
+      const googleBtn = document.querySelector(".googleBtn");
+
+      googleBtn.addEventListener("click", () => {
+        // window.location.href = "https://emmyhcoin.onrender.com/google";
+        window.location.href = "https://emmyhcoin.onrender.com/google";
+      });
+
+      const urlParams = new URLSearchParams(window.location.search);
+      const token = urlParams.get("token");
+      if (token) {
+        localStorage.setItem("emmy_access_token", token);
+        window.location.href = "/user";
+      }
+    </script>
+
   </body>
+
+
 </html>

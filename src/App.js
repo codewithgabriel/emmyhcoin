@@ -1,7 +1,6 @@
 import './App.css';
 import './form.css';
 import './form.css.map';
-
 // import 'bootstrap/dist/css/bootstrap.min.css';
 // import 'bootstrap/dist/js/bootstrap..js';
 import AOS from 'aos';
