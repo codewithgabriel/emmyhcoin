@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
 const Signup = () => {
-  
+
   const [ payload , setPayload ] = useState({
     firstname: '',
     lastname: '',
@@ -139,7 +139,7 @@ const Signup = () => {
                 <div className="form-parent col-12 col-lg-12 col-sm-12 col-xm-12 ">
                 <div class="alert-cm text-light col-12"    role="alert">
                     <i className="fas fa-lock" style={{marginRight: 5}}></i>
-                    <span>Please ensure you're on https://www.emmycoin.com</span>
+                    <span>Please ensure you're on https://www.emmyhcoin.com</span>
                 </div>
                     <form style={{ padding: 0, margin: 0 }} className="col-12" onSubmit={handleSubmit}>
                         <div className="form-group-cm col-12">
@@ -180,7 +180,7 @@ const Signup = () => {
 
                         <div className="form-group-cm col-12">
                             <i className="fas fa-users"></i>
-                            <input onChange={handleChange} className="form-input" type="text" name="referer" placeholder="e.g https://emmyhcoin.com/referrer=3l3485j" />
+                            <input onChange={handleChange} className="form-input" type="text" name="referer" placeholder="Referrer Code (Optional)" />
                         </div>
 
                         <div className="form-group-cm col-12">

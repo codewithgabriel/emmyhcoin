@@ -17,7 +17,7 @@ function NavbarSmall({toServices  ,  toAbout}) {
         <li className="nav-item">
           <Link className="nav-link active" aria-current="page" href="/">Home</Link>
         </li>
-        
+
         <li className="nav-item">
           <Link className="nav-link" to="" onClick={toServices}>Our Service</Link>
         </li>
@@ -25,15 +25,18 @@ function NavbarSmall({toServices  ,  toAbout}) {
         <li className="nav-item">
           <Link className="nav-link" to="/login">Wallet</Link>
         </li>
+        <li className="nav-item">
+          <Link className="nav-link" to="/login">Sign In</Link>
+        </li>
 
         <li className="nav-item">
           <Link className="nav-link" to="" onClick={toAbout}>About</Link>
         </li>
 
 
-        
+
       </ul>
-     
+
     </div>
   </div>
 </nav>

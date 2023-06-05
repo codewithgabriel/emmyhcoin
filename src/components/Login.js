@@ -145,7 +145,7 @@ const Login = () => {
                 <div className="form-parent col-12 col-lg-12 col-sm-12 col-xm-12 ">
                 <div className="alert-cm text-light col-12"    role="alert">
                     <i className="fas fa-lock" style={{marginRight: 5}}></i>
-                    <span>Please ensure you're on https://www.emmycoin.com</span>
+                    <span>Please ensure you're on https://www.emmyhcoin.com</span>
                 </div>
 
                     <form  onSubmit={handleSubmit} name="form-login" method="POST" className="form-signin col-12"  style={{ padding: 0, margin: 0 }}>

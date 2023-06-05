@@ -170,12 +170,23 @@ a.app-btn-default {
   color: white;
   background:  #1c2833;
 }
+
+
+
 .app-btn-default {
   padding: 10px 50px;
   border: 1px solid transparent;
   border-radius: 25px !important;
   color: white;
   background:  #1c2833;
+}
+
+.app-btn-default:hover {
+  padding: 10px 50px;
+  border: 1px solid transparent;
+  border-radius: 25px !important;
+  color:#1c2833;
+  background:  #0cc0f1 ;
 }
 
 
