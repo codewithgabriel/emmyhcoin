@@ -8,7 +8,7 @@ function Footer () {
     <div className='container-fluid row col-12' style={{padding: 50}}>
 
             <div className='footer-quick-links col-lg-4 col-md-4 col-xm-12 col-sm-12'>
-                <h3 style={{textAlign:'left'}}>Quick Links</h3>
+                <h4 style={{textAlign:'left'}}>Quick Links</h4>
                 <ul>
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/login">Wallet</Link></li>
@@ -20,7 +20,7 @@ function Footer () {
 
 
             <div className='footer-follow-us col-lg-4 col-md-4 col-xm-12 col-sm-12'>
-                <h3 style={{textAlign:'left'}}>Follow Us</h3>
+                <h4 style={{textAlign:'left'}}>Follow Us</h4>
                 <ul>
                     <li><Link to="#"><i class="fa-brands fa-twitter"> </i> Twitter</Link></li>
                     <li><Link to="#"><i class="fa-brands fa-instagram"></i> Instagram</Link></li>
