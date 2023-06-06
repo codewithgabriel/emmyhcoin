@@ -171,8 +171,8 @@ const Login = () => {
                             <button className="app-form-btn col-12" id="submit">   <i className="fa"></i> Sign In</button>
                         </div>
                         <div className="form-group-cm col-12 text-light ">
-                            <Link to="/forget" className="text-light">Forget Password</Link>
-                            <Link style={{float: 'right'}} to="/signup" className="text-light">Don't have an account?</Link>
+                            <Link to="/forget" className="text-light">Forget Password</Link> <br/>
+                            <Link to="/signup" className="text-light">Don't have an account?</Link>
 
                         </div>
 
